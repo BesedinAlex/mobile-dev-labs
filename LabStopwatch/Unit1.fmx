@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 344
+  ClientWidth = 617
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object labelTime: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 75.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = '0:00:00'
+    TabOrder = 0
+  end
+  object buttonStart: TButton
+    Position.X = 416.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'playtoolbutton'
+    TabOrder = 2
+    OnClick = buttonStartClick
+  end
+  object buttonStop: TButton
+    Position.X = 416.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    OnClick = buttonStopClick
+  end
+  object Button1: TButton
+    Position.X = 416.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'LAP'
+    OnClick = Button1Click
+  end
+  object memo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 185.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 357.000000000000000000
+    Viewport.Height = 181.000000000000000000
+  end
+  object timer: TTimer
+    Interval = 100
+    OnTimer = timerTimer
+    Left = 368
+  end
+end
