@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 563
+  ClientWidth = 371
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 371.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object editURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 0
+      KeyboardType = URL
+      Text = 'https://ya.ru/'
+      Position.X = 5.000000000000000000
+      Position.Y = 8.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Size.Width = 318.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      OnKeyDown = editURLKeyDown
+    end
+    object buttonGo: TButton
+      Align = Right
+      Position.X = 323.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbutton'
+      TabOrder = 1
+      Text = 'buttonGo'
+      OnClick = buttonGoClick
+    end
+  end
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Position.Y = 515.000000000000000000
+    Size.Width = 371.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object buttonBack: TButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 0
+      Text = 'buttonBack'
+      OnClick = buttonBackClick
+    end
+    object buttonForward: TButton
+      Align = Left
+      Position.X = 48.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowrighttoolbutton'
+      TabOrder = 1
+      Text = 'buttonForward'
+      OnClick = buttonForwardClick
+    end
+    object buttonReload: TButton
+      Align = Left
+      Position.X = 96.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbutton'
+      TabOrder = 2
+      Text = 'buttonReload'
+      OnClick = buttonReloadClick
+    end
+    object buttonStop: TButton
+      Align = Left
+      Position.X = 144.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbutton'
+      TabOrder = 3
+      Text = 'buttonStop'
+      OnClick = buttonStopClick
+    end
+    object buttonInfo: TButton
+      Align = Right
+      Position.X = 323.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 4
+      Text = 'buttonInfo'
+      OnClick = buttonInfoClick
+    end
+  end
+  object WebBrowser: TWebBrowser
+    Align = Client
+    Size.Width = 371.000000000000000000
+    Size.Height = 467.000000000000000000
+    Size.PlatformDefault = False
+    OnDidFinishLoad = WebBrowserDidFinishLoad
+  end
+end
