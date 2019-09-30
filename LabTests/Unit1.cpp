@@ -13,6 +13,7 @@ __fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner)
 {
 	TabControl->First();
 	TabControl->TabPosition = TTabPosition::None;
+	ProgressBar->Max = TabControl->TabCount - 1;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonStartClick(TObject *Sender)
@@ -23,14 +24,21 @@ void __fastcall TForm1::ButtonStartClick(TObject *Sender)
 void __fastcall TForm1::ButtonAnswerClick(TObject *Sender)
 {
 	UnicodeString x = ((TControl *) Sender)->Tag == 1 ? L"Right" : L"Wrong";
+	CountRight += ((TControl *) Sender)->Tag;
 	Memo->Lines->Add(L"Question " + TabControl->ActiveTab->Text + " - " + x);
-
+	LabelCount->Text = L"(" + IntToStr(CountRight) + " of 3)";
     TabControl->Next();
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonRestartClick(TObject *Sender)
 {
-    Memo->Lines->Clear();
+	CountRight = 0;
+	Memo->Lines->Clear();
 	TabControl->First();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::TabControlChange(TObject *Sender)
+{
+	ProgressBar->Value = TabControl->ActiveTab->Index;
 }
 //---------------------------------------------------------------------------

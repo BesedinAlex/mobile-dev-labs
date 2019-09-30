@@ -36,27 +36,39 @@ object Form1: TForm1
       TabOrder = 1
       Text = 'ButtonInfo'
     end
+    object LabelCount: TLabel
+      Align = Left
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = '(0 of 3)'
+      TabOrder = 2
+    end
   end
   object TabControl: TTabControl
     Align = Client
     Size.Width = 474.000000000000000000
-    Size.Height = 678.000000000000000000
+    Size.Height = 668.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
     TabIndex = 4
     TabOrder = 1
     TabPosition = PlatformDefault
+    OnChange = TabControlChange
     Sizes = (
       474s
-      629s
+      619s
       474s
-      629s
+      619s
       474s
-      629s
+      619s
       474s
-      629s
+      619s
       474s
-      629s)
+      619s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
@@ -76,7 +88,7 @@ object Form1: TForm1
         Margins.Right = 2.000000000000000000
         Margins.Bottom = 2.000000000000000000
         Position.X = 2.000000000000000000
-        Position.Y = 583.000000000000000000
+        Position.Y = 573.000000000000000000
         Size.Width = 470.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
@@ -786,7 +798,7 @@ object Form1: TForm1
           end>
         Align = Client
         Size.Width = 474.000000000000000000
-        Size.Height = 581.000000000000000000
+        Size.Height = 571.000000000000000000
         Size.PlatformDefault = False
       end
     end
@@ -804,11 +816,11 @@ object Form1: TForm1
       object ScrollBox1: TScrollBox
         Align = Client
         Size.Width = 474.000000000000000000
-        Size.Height = 629.000000000000000000
+        Size.Height = 619.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Viewport.Width = 474.000000000000000000
-        Viewport.Height = 629.000000000000000000
+        Viewport.Height = 619.000000000000000000
         object Button1: TButton
           Align = Top
           Margins.Top = 2.000000000000000000
@@ -902,11 +914,11 @@ object Form1: TForm1
       object ScrollBox2: TScrollBox
         Align = Client
         Size.Width = 474.000000000000000000
-        Size.Height = 629.000000000000000000
+        Size.Height = 619.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Viewport.Width = 474.000000000000000000
-        Viewport.Height = 629.000000000000000000
+        Viewport.Height = 619.000000000000000000
         object Button6: TButton
           Align = Top
           Margins.Top = 2.000000000000000000
@@ -1000,11 +1012,11 @@ object Form1: TForm1
       object ScrollBox3: TScrollBox
         Align = Client
         Size.Width = 474.000000000000000000
-        Size.Height = 629.000000000000000000
+        Size.Height = 619.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Viewport.Width = 474.000000000000000000
-        Viewport.Height = 629.000000000000000000
+        Viewport.Height = 619.000000000000000000
         object Button11: TButton
           Tag = 1
           Align = Top
@@ -1085,7 +1097,7 @@ object Form1: TForm1
       object ButtonRestart: TButton
         Align = Bottom
         StyledSettings = [Family, Style]
-        Position.Y = 585.000000000000000000
+        Position.Y = 575.000000000000000000
         Size.Width = 474.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
@@ -1103,12 +1115,20 @@ object Form1: TForm1
         TextSettings.Font.Size = 20.000000000000000000
         Align = Client
         Size.Width = 474.000000000000000000
-        Size.Height = 585.000000000000000000
+        Size.Height = 575.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         Viewport.Width = 466.000000000000000000
-        Viewport.Height = 577.000000000000000000
+        Viewport.Height = 567.000000000000000000
       end
     end
+  end
+  object ProgressBar: TProgressBar
+    Align = Top
+    Orientation = Horizontal
+    Position.Y = 50.000000000000000000
+    Size.Width = 474.000000000000000000
+    Size.Height = 10.000000000000000000
+    Size.PlatformDefault = False
   end
 end

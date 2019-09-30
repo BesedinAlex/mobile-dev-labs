@@ -51,10 +51,14 @@ __published:	// IDE-managed Components
 	TLabel *Label4;
 	TButton *ButtonRestart;
 	TMemo *Memo;
+	TLabel *LabelCount;
+	TProgressBar *ProgressBar;
 	void __fastcall ButtonStartClick(TObject *Sender);
 	void __fastcall ButtonAnswerClick(TObject *Sender);
 	void __fastcall ButtonRestartClick(TObject *Sender);
+	void __fastcall TabControlChange(TObject *Sender);
 private:	// User declarations
+    int CountRight;
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
 };
