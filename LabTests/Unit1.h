@@ -53,12 +53,17 @@ __published:	// IDE-managed Components
 	TMemo *Memo;
 	TLabel *LabelCount;
 	TProgressBar *ProgressBar;
+	TLabel *Label5;
+	TImage *Image2;
+	TImage *Image3;
+	TStyleBook *StyleBook1;
 	void __fastcall ButtonStartClick(TObject *Sender);
 	void __fastcall ButtonAnswerClick(TObject *Sender);
 	void __fastcall ButtonRestartClick(TObject *Sender);
 	void __fastcall TabControlChange(TObject *Sender);
 private:	// User declarations
-    int CountRight;
+	int CountRight;
+	int CountWrong;
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
 };
