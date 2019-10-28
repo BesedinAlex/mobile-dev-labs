@@ -15,8 +15,8 @@ Concentration::Concentration(int numberOfPairsOfCards)
 		Concentration::cards.push_back(*card);
         Concentration::cards.push_back(*card);
     }
-    std::vector<Card> tempCards;
-	for (int i = 0; Concentration::cards.size; i++)
+	std::vector<Card> tempCards;
+	for (int i = 0; i < Concentration::cards.size(); i++)
 	{
 		int randomIndex = std::rand();
         auto card = Concentration::cards[randomIndex];
@@ -29,10 +29,10 @@ Concentration::Concentration(int numberOfPairsOfCards)
 void Concentration::chooseCard(int index)
 {
     if (!Concentration::cards[index].isMatched)
-    {
+	{
         int facedUpCardIndex = -1;
-        for (int i = 0; i < Concentration::cards.length; i++)
-        {
+		for (int i = 0; i < Concentration::cards.size(); i++)
+		{
             if (!Concentration::cards[i].isMatched && Concentration::cards[i].isFaceUp)
             {
                 facedUpCardIndex = i;
