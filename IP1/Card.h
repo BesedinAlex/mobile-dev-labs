@@ -16,5 +16,4 @@ struct Card
 	Card();
 
 	static int getUniqueIdentifier();
-    static bool equals(Card a, Card b);
 };

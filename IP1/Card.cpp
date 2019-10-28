@@ -20,8 +20,3 @@ int Card::getUniqueIdentifier()
 	Card::numberOfCards += 1;
 	return Card::numberOfCards;
 }
-
-bool Card::equals(Card a, Card b)
-{
-	return a.identifier == b.identifier;
-}
