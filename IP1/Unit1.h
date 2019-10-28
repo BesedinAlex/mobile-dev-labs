@@ -10,6 +10,8 @@
 #include <FMX.Types.hpp>
 #include <FMX.Controls.Presentation.hpp>
 #include <FMX.StdCtrls.hpp>
+
+#include "Concentration.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -32,7 +34,8 @@ __published:	// IDE-managed Components
 	TButton *Button15;
 	TButton *Button16;
 private:	// User declarations
-    TButton *buttons[];
+	void updateView();
+    Concentration game;
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
 };

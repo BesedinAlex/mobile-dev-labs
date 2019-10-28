@@ -10,20 +10,19 @@
 Concentration::Concentration(int numberOfPairsOfCards)
 {
     for (int i = 0; i < numberOfPairsOfCards; i++)
-    {
-        auto card = new Card();
-		Concentration::cards.push_back(*card);
-        Concentration::cards.push_back(*card);
-    }
+	{
+		Concentration::cards.push_back(*(new Card(i)));
+		Concentration::cards.push_back(*(new Card(i)));
+	}
 	std::vector<Card> tempCards;
 	for (int i = 0; i < Concentration::cards.size(); i++)
 	{
-		int randomIndex = std::rand();
-        auto card = Concentration::cards[randomIndex];
-		Concentration::cards.erase(Concentration::cards.begin() + randomIndex);
+		int randomIndex = std::rand() % Concentration::cards.size();
+		Card card = Concentration::cards[randomIndex];
 		tempCards.push_back(card);
+		Concentration::cards.erase(Concentration::cards.begin() + randomIndex);
 	}
-    Concentration::cards = tempCards;
+//	Concentration::cards = tempCards;
 }
 
 void Concentration::chooseCard(int index)

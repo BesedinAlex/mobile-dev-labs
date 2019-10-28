@@ -6,17 +6,9 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
-int Card::numberOfCards = 0;
-
-Card::Card()
+Card::Card(int index)
 {
-	Card::identifier = Card::getUniqueIdentifier();
+	Card::identifier = index;
 	Card::isFaceUp = false;
 	Card::isMatched = false;
-}
-
-int Card::getUniqueIdentifier()
-{
-	Card::numberOfCards += 1;
-	return Card::numberOfCards;
 }

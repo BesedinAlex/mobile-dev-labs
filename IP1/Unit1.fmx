@@ -132,6 +132,7 @@ object Form1: TForm1
       TabOrder = 15
     end
     object Button2: TButton
+      Tag = 1
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -139,6 +140,7 @@ object Form1: TForm1
       TabOrder = 14
     end
     object Button3: TButton
+      Tag = 2
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -146,6 +148,7 @@ object Form1: TForm1
       TabOrder = 13
     end
     object Button4: TButton
+      Tag = 3
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -153,6 +156,7 @@ object Form1: TForm1
       TabOrder = 12
     end
     object Button5: TButton
+      Tag = 4
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -160,6 +164,7 @@ object Form1: TForm1
       TabOrder = 11
     end
     object Button6: TButton
+      Tag = 5
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -167,6 +172,7 @@ object Form1: TForm1
       TabOrder = 10
     end
     object Button7: TButton
+      Tag = 6
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -174,6 +180,7 @@ object Form1: TForm1
       TabOrder = 9
     end
     object Button8: TButton
+      Tag = 7
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -181,6 +188,7 @@ object Form1: TForm1
       TabOrder = 8
     end
     object Button9: TButton
+      Tag = 8
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -188,6 +196,7 @@ object Form1: TForm1
       TabOrder = 7
     end
     object Button10: TButton
+      Tag = 9
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -195,6 +204,7 @@ object Form1: TForm1
       TabOrder = 6
     end
     object Button11: TButton
+      Tag = 10
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -202,6 +212,7 @@ object Form1: TForm1
       TabOrder = 5
     end
     object Button12: TButton
+      Tag = 11
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -209,6 +220,7 @@ object Form1: TForm1
       TabOrder = 4
     end
     object Button13: TButton
+      Tag = 12
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -216,6 +228,7 @@ object Form1: TForm1
       TabOrder = 3
     end
     object Button14: TButton
+      Tag = 13
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -223,6 +236,7 @@ object Form1: TForm1
       TabOrder = 2
     end
     object Button15: TButton
+      Tag = 14
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
@@ -230,6 +244,7 @@ object Form1: TForm1
       TabOrder = 1
     end
     object Button16: TButton
+      Tag = 15
       Align = Client
       Size.Width = 97.250000000000000000
       Size.Height = 150.750000000000000000
