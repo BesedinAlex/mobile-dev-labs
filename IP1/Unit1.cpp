@@ -58,6 +58,9 @@ TButton *TForm1::getButton(int id)
 }
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
+    if (((TButton*)Sender)->StyleLookup != "") {
+		return;
+	}
 	game.chooseCard(((TButton*)Sender)->Tag);
 	Form1->updateView();
 }
