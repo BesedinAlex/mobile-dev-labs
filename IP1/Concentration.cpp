@@ -16,21 +16,6 @@ Concentration::Concentration(int numberOfPairsOfCards)
 	}
 	auto rng = std::default_random_engine {};
 	std::shuffle(Concentration::cards.begin(), Concentration::cards.end(), rng);
-//	int numberOfCards = numberOfPairsOfCards * 2;
-//	for (int i = 0; i < numberOfCards; i++) {
-//		int random = std::rand % numberOfCards * 2;
-//		temp.push_back(
-//	}
-
-//	std::vector<Card> tempCards;
-//	for (int i = 0; i < Concentration::cards.size(); i++)
-//	{
-//		int randomIndex = std::rand() % Concentration::cards.size();
-//		Card card = Concentration::cards[randomIndex];
-//		tempCards.push_back(card);
-//		Concentration::cards.erase(Concentration::cards.begin() + randomIndex);
-//	}
-//	Concentration::cards = tempCards;
 }
 
 void Concentration::chooseCard(int index)
