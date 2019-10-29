@@ -4,6 +4,8 @@
 #define ConcentrationH
 
 #include <vector>
+#include <algorithm>
+#include <random>
 #include "Card.h"
 
 //---------------------------------------------------------------------------

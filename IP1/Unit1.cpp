@@ -12,7 +12,6 @@ TForm1 *Form1;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner), game(8)
 {
-	
 	Form1->updateView();
 }
 //---------------------------------------------------------------------------
@@ -25,33 +24,42 @@ void TForm1::updateView()
 	"bookmarkstoolbutton",
 	"drawertoolbutton",
 	"refreshtoolbutton",
-	"refreshtoolbutton",
-	""
+	"searcheditbutton",
+	"stoptoolbutton"
 	};
-	Button1->Enabled = !game.cards[0].isMatched;
-	Button2->Enabled = !game.cards[1].isMatched;
-	Button3->Enabled = !game.cards[2].isMatched;
-	Button4->Enabled = !game.cards[3].isMatched;
-	Button5->Enabled = !game.cards[4].isMatched;
-	Button6->Enabled = !game.cards[5].isMatched;
-	Button7->Enabled = !game.cards[6].isMatched;
-	Button8->Enabled = !game.cards[7].isMatched;
-	Button9->Enabled = !game.cards[8].isMatched;
-	Button10->Enabled = !game.cards[9].isMatched;
-	Button1->StyleLookup = icons[game.cards[0].identifier];
-	Button2->StyleLookup = icons[game.cards[1].identifier];
-	Button3->StyleLookup = icons[game.cards[2].identifier];
-	Button4->StyleLookup = icons[game.cards[3].identifier];
-	Button5->StyleLookup = icons[game.cards[4].identifier];
-	Button6->StyleLookup = icons[game.cards[5].identifier];
-	Button7->StyleLookup = icons[game.cards[6].identifier];
-	Button8->StyleLookup = icons[game.cards[7].identifier];
-	Button9->StyleLookup = icons[game.cards[8].identifier];
-	Button10->StyleLookup = icons[game.cards[9].identifier];
-	Button11->StyleLookup = icons[game.cards[10].identifier];
-	Button12->StyleLookup = icons[game.cards[11].identifier];
-	Button13->StyleLookup = icons[game.cards[12].identifier];
-	Button14->StyleLookup = icons[game.cards[13].identifier];
-	Button15->StyleLookup = icons[game.cards[14].identifier];
-	Button16->StyleLookup = icons[game.cards[15].identifier];
+	for (int i = 0; i < 16; i++) {
+		getButton(i)->Enabled = !game.cards[i].isMatched;
+        getButton(i)->StyleLookup = game.cards[i].isFaceUp ? icons[game.cards[i].identifier] : "";
+	}
 }
+
+TButton *TForm1::getButton(int id)
+{
+	switch (id)
+	{
+		case 0: return Button1;
+		case 1: return Button2;
+		case 2: return Button3;
+		case 3: return Button4;
+		case 4: return Button5;
+		case 5: return Button6;
+		case 6: return Button7;
+		case 7: return Button8;
+		case 8: return Button9;
+		case 9: return Button10;
+		case 10: return Button11;
+		case 11: return Button12;
+		case 12: return Button13;
+		case 13: return Button14;
+		case 14: return Button15;
+		case 15: return Button16;
+		default: return nullptr;
+    }
+}
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	game.chooseCard(((TButton*)Sender)->Tag);
+	Form1->updateView();
+}
+//---------------------------------------------------------------------------
+

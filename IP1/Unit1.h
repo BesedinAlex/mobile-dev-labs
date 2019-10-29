@@ -33,8 +33,10 @@ __published:	// IDE-managed Components
 	TButton *Button14;
 	TButton *Button15;
 	TButton *Button16;
+	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 	void updateView();
+	TButton *getButton(int id);
     Concentration game;
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
