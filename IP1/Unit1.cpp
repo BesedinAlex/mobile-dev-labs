@@ -31,6 +31,9 @@ void TForm1::updateView()
 		getButton(i)->Enabled = !game.cards[i].isMatched;
         getButton(i)->StyleLookup = game.cards[i].isFaceUp ? icons[game.cards[i].identifier] : "";
 	}
+	if (game.win) {
+        ShowMessage("Вы победили!");
+	}
 }
 
 TButton *TForm1::getButton(int id)
@@ -63,6 +66,13 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 	}
 	game.chooseCard(((TButton*)Sender)->Tag);
 	Form1->updateView();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::ButtonRestartClick(TObject *Sender)
+{
+	game.restart();
+    Form1->updateView();
 }
 //---------------------------------------------------------------------------
 

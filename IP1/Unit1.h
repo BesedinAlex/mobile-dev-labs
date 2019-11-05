@@ -33,7 +33,9 @@ __published:	// IDE-managed Components
 	TButton *Button14;
 	TButton *Button15;
 	TButton *Button16;
+	TButton *ButtonRestart;
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall ButtonRestartClick(TObject *Sender);
 private:	// User declarations
 	void updateView();
 	TButton *getButton(int id);

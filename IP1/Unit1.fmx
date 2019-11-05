@@ -11,7 +11,7 @@ object Form1: TForm1
   object GridPanelLayout1: TGridPanelLayout
     Align = Client
     Size.Width = 389.000000000000000000
-    Size.Height = 603.000000000000000000
+    Size.Height = 581.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     ColumnCollection = <
@@ -127,7 +127,7 @@ object Form1: TForm1
     object Button1: TButton
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 15
       OnClick = Button1Click
@@ -136,7 +136,7 @@ object Form1: TForm1
       Tag = 1
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 14
       OnClick = Button1Click
@@ -145,7 +145,7 @@ object Form1: TForm1
       Tag = 2
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 13
       OnClick = Button1Click
@@ -154,7 +154,7 @@ object Form1: TForm1
       Tag = 3
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 12
       OnClick = Button1Click
@@ -163,7 +163,7 @@ object Form1: TForm1
       Tag = 4
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 11
       OnClick = Button1Click
@@ -172,7 +172,7 @@ object Form1: TForm1
       Tag = 5
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 10
       OnClick = Button1Click
@@ -181,7 +181,7 @@ object Form1: TForm1
       Tag = 6
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 9
       OnClick = Button1Click
@@ -190,7 +190,7 @@ object Form1: TForm1
       Tag = 7
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 8
       OnClick = Button1Click
@@ -199,7 +199,7 @@ object Form1: TForm1
       Tag = 8
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 7
       OnClick = Button1Click
@@ -208,7 +208,7 @@ object Form1: TForm1
       Tag = 9
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 6
       OnClick = Button1Click
@@ -217,7 +217,7 @@ object Form1: TForm1
       Tag = 10
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
       OnClick = Button1Click
@@ -226,7 +226,7 @@ object Form1: TForm1
       Tag = 11
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
       OnClick = Button1Click
@@ -235,7 +235,7 @@ object Form1: TForm1
       Tag = 12
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
       OnClick = Button1Click
@@ -244,7 +244,7 @@ object Form1: TForm1
       Tag = 13
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
       OnClick = Button1Click
@@ -253,7 +253,7 @@ object Form1: TForm1
       Tag = 14
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       OnClick = Button1Click
@@ -262,10 +262,20 @@ object Form1: TForm1
       Tag = 15
       Align = Client
       Size.Width = 97.250000000000000000
-      Size.Height = 150.750000000000000000
+      Size.Height = 145.250000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       OnClick = Button1Click
     end
+  end
+  object ButtonRestart: TButton
+    Align = Bottom
+    Position.Y = 581.000000000000000000
+    Size.Width = 389.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Restart Game'
+    OnClick = ButtonRestartClick
   end
 end

@@ -14,9 +14,13 @@
 struct Concentration
 {
 	std::vector<Card> cards;
+
+	bool win;
+    int pairsOfCards;
 	
 	Concentration(int numberOfPairsOfCards);
 
 	void chooseCard(int index);
-	
+
+    void restart();
 };
