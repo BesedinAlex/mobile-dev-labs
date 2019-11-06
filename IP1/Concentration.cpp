@@ -16,7 +16,8 @@ Concentration::Concentration(int numberOfPairsOfCards)
 		Concentration::cards.push_back(*(new Card(i)));
 		Concentration::cards.push_back(*(new Card(i)));
 	}
-	auto rng = std::default_random_engine {};
+	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+	auto rng = std::default_random_engine(seed);
 	std::shuffle(Concentration::cards.begin(), Concentration::cards.end(), rng);
 }
 
@@ -29,7 +30,8 @@ void Concentration::restart()
 		Concentration::cards.push_back(*(new Card(i)));
 		Concentration::cards.push_back(*(new Card(i)));
 	}
-	auto rng = std::default_random_engine {};
+	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+	auto rng = std::default_random_engine(seed);
 	std::shuffle(Concentration::cards.begin(), Concentration::cards.end(), rng);
 }
 
