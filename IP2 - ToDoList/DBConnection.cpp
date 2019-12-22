@@ -15,13 +15,6 @@ __fastcall TDataModuleSQLite::TDataModuleSQLite(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TDataModuleSQLite::FDConnectionAfterConnect(TObject *Sender)
-{
-	FDTableTasks->Open();
-    FDTableSubTasks->Open();
-}
-//---------------------------------------------------------------------------
-
 void __fastcall TDataModuleSQLite::FDConnectionBeforeConnect(TObject *Sender)
 {
 	FDConnection->Params->Values["Database"] =
@@ -32,4 +25,3 @@ void __fastcall TDataModuleSQLite::FDConnectionBeforeConnect(TObject *Sender)
 	#endif
 }
 //---------------------------------------------------------------------------
-

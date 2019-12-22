@@ -31,16 +31,11 @@ class TDataModuleSQLite : public TDataModule
 {
 __published:	// IDE-managed Components
 	TFDConnection *FDConnection;
-	TFDTable *FDTableTasks;
-	TFDAutoIncField *FDTableTasksid;
-	TWideMemoField *FDTableTasksname;
-	TIntegerField *FDTableTasksdone;
-	TFDTable *FDTableSubTasks;
-	TFDAutoIncField *FDTableSubTasksid;
-	TWideMemoField *FDTableSubTasksname;
-	TIntegerField *FDTableSubTasksdone;
-	TIntegerField *FDTableSubTasksmainId;
-	void __fastcall FDConnectionAfterConnect(TObject *Sender);
+	TFDQuery *FDQueryTasks;
+	TFDAutoIncField *FDQueryTasksid;
+	TWideMemoField *FDQueryTasksname;
+	TIntegerField *FDQueryTasksdone;
+	TIntegerField *FDQueryTasksmainTaskId;
 	void __fastcall FDConnectionBeforeConnect(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

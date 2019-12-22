@@ -7,8 +7,8 @@
 #pragma hdrstop
 #include <System.StartUpCopy.hpp>
 //---------------------------------------------------------------------------
-USEFORM("DBConnection.cpp", DataModuleSQLite); /* TDataModule: File Type */
 USEFORM("MainForm.cpp", Form1);
+USEFORM("DBConnection.cpp", DataModuleSQLite); /* TDataModule: File Type */
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
 {
