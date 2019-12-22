@@ -1,0 +1,90 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 408
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 408.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ButtonReturn: TButton
+      Align = Left
+      Size.Width = 49.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      TabOrder = 0
+      Text = 'ButtonReturn'
+    end
+    object ButtonInfo: TButton
+      Align = Right
+      Position.X = 360.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 1
+      Text = 'ButtonInfo'
+    end
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 311.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'To-Do List'
+      TabOrder = 2
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = False
+    Size.Width = 408.000000000000000000
+    Size.Height = 431.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      408s
+      405s
+      408s
+      405s)
+    object TabItemHome: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 96.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItemHome'
+      ExplicitSize.cx = 96.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    object TabItemTask: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 87.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItemTask'
+      ExplicitSize.cx = 87.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+end
